@@ -7,6 +7,8 @@ import { BsSearch } from 'react-icons/bs';
 import { CgMenuLeft, CgMenuRight } from 'react-icons/cg';
 
 import Style from './Navbar.module.css';
+import { Discover, HelpCenter, Notification, Profile, SideBar } from './index';
+import { Button } from '../componentsindex';
 
 const Navbar = () => {
   return (
