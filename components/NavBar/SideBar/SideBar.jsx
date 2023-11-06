@@ -21,7 +21,7 @@ import Button from "../../Button/Button";
 import { Router } from "next/router";
 
 const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
-  //------USESTATE
+  //------USE STATE
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
 
@@ -66,11 +66,11 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
   const helpCenter = [
     {
       name: "About",
-      link: "aboutus",
+      link: "about",
     },
     {
       name: "Contact Us",
-      link: "contactus",
+      link: "contact-us",
     },
     {
       name: "Sign Up",
@@ -114,7 +114,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       />
 
       <div className={Style.sideBar_box}>
-        {/* <Image src={images.logo} alt="logo" width={150} height={150} /> */}
+        { <Image src={images.logo} alt="logo" width={150} height={150} /> }
         <p>
           <a href="/">
             <DiJqueryLogo className={Style.sideBar_box_logo} />

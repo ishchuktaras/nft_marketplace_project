@@ -22,8 +22,8 @@ const Profile = ({ currentAccount }) => {
         />
 
         <div className={Style.profile_account_info}>
-          <p>Shoaib Bhai</p>
-          <small>{currentAccount.slice(0, 18)}..</small>
+          <p>Pylyp Orlyk</p>
+          <small>123321...</small>
         </div>
       </div>
 
@@ -53,13 +53,13 @@ const Profile = ({ currentAccount }) => {
           <div className={Style.profile_menu_one_item}>
             <MdHelpCenter />
             <p>
-              <Link href={{ pathname: "/contactus" }}>Help</Link>
+              <Link href={{ pathname: "/help" }}>Help</Link>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
             <TbDownload />
             <p>
-              <Link href={{ pathname: "/aboutus" }}>About Us</Link>
+              <Link href={{ pathname: "/about-us" }}>About Us</Link>
             </p>
           </div>
         </div>

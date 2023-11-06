@@ -138,7 +138,7 @@ const NavBar = () => {
                 className={Style.navbar_container_right_profile}
               />
 
-              {profile && <Profile currentAccount={currentAccount} />}
+              {profile && <Profile />}
             </div>
           </div>
 
@@ -153,7 +153,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR CPMPONE/NT */}
+      {/* SIDEBAR COMPONENT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar
