@@ -79,7 +79,12 @@ const NavBar = () => {
       <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
-            <DiJqueryLogo onClick={() => router.push("/")} />
+            <Image
+              src={images.logo}
+              alt="NFT Market Place"
+              width={100}
+              height={100}
+            />
           </div>
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
@@ -158,8 +163,8 @@ const NavBar = () => {
         <div className={Style.sideBar}>
           <SideBar
             setOpenSideMenu={setOpenSideMenu}
-            currentAccount={currentAccount}
-            connectWallet={connectWallet}
+            //currentAccount={currentAccount}
+            //connectWallet={connectWallet}
           />
         </div>
       )}
