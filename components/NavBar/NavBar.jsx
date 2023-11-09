@@ -127,7 +127,7 @@ const NavBar = () => {
 
           {/* CREATE BUTTON SECTION */}
           <div className={Style.navbar_container_right_button}>
-            <Button btnText="Create" />
+            <Button btnName="Create" />
           </div>
 
           {/* USER PROFILE */}
