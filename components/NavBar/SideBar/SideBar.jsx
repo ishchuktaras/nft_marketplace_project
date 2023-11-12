@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { GrClose } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -62,7 +62,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       link: "blog",
     },
   ];
-  //------HELP CNTEER
+  //------HELP CENTER
   const helpCenter = [
     {
       name: "About",
@@ -108,7 +108,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
 
   return (
     <div className={Style.sideBar}>
-      <GrClose
+      <AiOutlineClose
         className={Style.sideBar_closeBtn}
         onClick={() => closeSideBar()}
       />

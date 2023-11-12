@@ -148,7 +148,6 @@ const NavBar = () => {
           </div>
 
           {/* MENU BUTTON */}
-
           <div className={Style.navbar_container_right_menuBtn}>
             <CgMenuRight
               className={Style.menuIcon}

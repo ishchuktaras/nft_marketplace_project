@@ -16,7 +16,7 @@
     right: 2rem;
     transition: all .2s ease-in-out;
     cursor: pointer;
-    box-shadow:  var(--box-shadow);
+    box-shadow:  var(--box-shadow-2);
 }
 
 .sideBar_closeBtn:hover{
