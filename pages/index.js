@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect, useContext } from "react";
 
-const Home
- = () => {
+//INTERNAL IMPORT
+import Style from "../styles/index.module.css";
+import { HeroSection } from "../components/componentsindex";
+
+const Home = () => {
   return (
-    <div>
-      
+    <div className={Style.homePage}>
+      <HeroSection />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
