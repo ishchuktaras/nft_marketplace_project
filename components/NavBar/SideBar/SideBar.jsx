@@ -12,7 +12,7 @@ import {
   TiArrowSortedDown,
   TiArrowSortedUp,
 } from "react-icons/ti";
-import { DiJqueryLogo } from "react-icons/di";
+import { RiNftLine } from "react-icons/ri";
 
 //INTERNAL IMPORT
 import Style from "./SideBar.module.css";
@@ -114,15 +114,15 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       />
 
       <div className={Style.sideBar_box}>
-        { <Image src={images.logo} alt="logo" width={150} height={150} /> }
+        {<Image src={images.logo} alt="logo" width={150} height={150} />}
         <p>
           <a href="/">
-            <DiJqueryLogo className={Style.sideBar_box_logo} />
+            <RiNftLine className={Style.sideBar_box_logo} />
           </a>
         </p>
         <p>
-          Discover the most outstanding articles on all topics of NFT & write
-          your own stories and share them
+          Discover the best articles on all NFT topics, write and share your own
+          stories
         </p>
         <div className={Style.sideBar_social}>
           <a href="#">
