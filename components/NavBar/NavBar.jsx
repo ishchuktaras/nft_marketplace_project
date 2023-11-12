@@ -131,7 +131,6 @@ const NavBar = () => {
           </div>
 
           {/* USER PROFILE */}
-
           <div className={Style.navbar_container_right_profile_box}>
             <div className={Style.navbar_container_right_profile}>
               <Image
