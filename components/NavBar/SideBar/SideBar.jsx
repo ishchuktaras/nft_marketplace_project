@@ -20,12 +20,10 @@ import images from "../../../img";
 import Button from "../../Button/Button";
 import { Router } from "next/router";
 
-const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
+const SideBar = () => {
   //------USE STATE
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
-
-  const router = useRouter();
 
   //--------DISCOVER NAVIGATION MENU
   const discover = [
