@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import { RiNftLine } from "react-icons/ri";
+import React from "react";
+import Image from "next/image";
+import { DiJqueryLogo } from "react-icons/di";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -10,21 +10,24 @@ import {
   TiArrowSortedDown,
   TiArrowSortedUp,
 } from "react-icons/ti";
-import { RiSendPlaneFill } from 'react-icons/ri';
+import { RiSendPlaneFill } from "react-icons/ri";
 
-//Internal Import
-import Style from './Footer.module.css';
-import images from '../../img';
-import {Discover, HelpCenter} from '../NavBar/index';
+//INTERNAL IMPORT
+import Style from "./Footer.module.css";
+import images from "../../img";
+import { Discover, HelpCenter } from "../NavBar/index";
 
 const Footer = () => {
   return (
     <div className={Style.footer}>
       <div className={Style.footer_box}>
         <div className={Style.footer_box_social}>
-          {<Image src={images.logo} alt="footer logo" height={100} width={100} /> }
+          {/* <Image src={images.logo} alt="footer logo" height={100} width={100} /> */}
+          <a href="/">
+            <DiJqueryLogo className={Style.footer_box_social_logo} />
+          </a>
           <p>
-            The digital marketplace for crypto
+            The world’s first and largest digital marketplace for crypto
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
             exclusive digital items.
           </p>
@@ -77,4 +80,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;

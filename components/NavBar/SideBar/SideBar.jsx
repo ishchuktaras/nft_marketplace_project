@@ -12,18 +12,19 @@ import {
   TiArrowSortedDown,
   TiArrowSortedUp,
 } from "react-icons/ti";
-import { RiNftLine } from "react-icons/ri";
+import { DiJqueryLogo } from "react-icons/di";
 
 //INTERNAL IMPORT
 import Style from "./SideBar.module.css";
 import images from "../../../img";
 import Button from "../../Button/Button";
-import { Router } from "next/router";
 
-const SideBar = () => {
+const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
   //------USE STATE
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
+
+  const router = useRouter();
 
   //--------DISCOVER NAVIGATION MENU
   const discover = [
@@ -64,11 +65,11 @@ const SideBar = () => {
   const helpCenter = [
     {
       name: "About",
-      link: "about",
+      link: "aboutus",
     },
     {
       name: "Contact Us",
-      link: "contact-us",
+      link: "contactus",
     },
     {
       name: "Sign Up",
@@ -112,15 +113,11 @@ const SideBar = () => {
       />
 
       <div className={Style.sideBar_box}>
-        {<Image src={images.logo} alt="logo" width={150} height={150} />}
+        <Image src={images.logo} alt="logo" width={100} height={100} />
+
         <p>
-          <a href="/">
-            <RiNftLine className={Style.sideBar_box_logo} />
-          </a>
-        </p>
-        <p>
-          Discover the best articles on all NFT topics, write and share your own
-          stories
+          Discover the most outstanding articles on all topics of NFT & write
+          your own stories and share them
         </p>
         <div className={Style.sideBar_social}>
           <a href="#">

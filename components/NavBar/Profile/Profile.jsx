@@ -22,8 +22,7 @@ const Profile = ({ currentAccount }) => {
         />
 
         <div className={Style.profile_account_info}>
-          <p>Pylyp Orlyk</p>
-          <small>123321...</small>
+          <p>Ostap Vyshnia</p>
         </div>
       </div>
 
@@ -53,13 +52,13 @@ const Profile = ({ currentAccount }) => {
           <div className={Style.profile_menu_one_item}>
             <MdHelpCenter />
             <p>
-              <Link href={{ pathname: "/help" }}>Help</Link>
+              <Link href={{ pathname: "/contactus" }}>Help</Link>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
             <TbDownload />
             <p>
-              <Link href={{ pathname: "/about-us" }}>About Us</Link>
+              <Link href={{ pathname: "/aboutus" }}>About Us</Link>
             </p>
           </div>
         </div>

@@ -20,7 +20,7 @@
     gap: 3rem;
 }
 
-/* SOCIAL */
+/* //SOCIAL */
 .footer_social{
     display: flex;
     gap: 1.3rem;
@@ -75,7 +75,7 @@
     padding: 1rem 2rem;
 }
 
-/* MEDIA QUERY */
+/* //MEDIA QUERY */
 @media screen and (max-width: 45em) {
     .footer_box{
         width: 90%;
