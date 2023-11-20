@@ -13,7 +13,7 @@ const Home = () => {
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-      
+      <BigNFTSlider />
     </div>
   );
 };

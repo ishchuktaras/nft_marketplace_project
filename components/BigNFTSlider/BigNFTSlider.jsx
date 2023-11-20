@@ -5,11 +5,11 @@ import { MdVerified, MdTimer } from "react-icons/md";
 import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb";
 
 //INTERNAL IMPORT
-import Style from "./BigNFTSilder.module.css";
+import Style from "./BigNFTSlider.module.css";
 import images from "../../img";
 import Button from "../Button/Button";
 
-const BigNFTSilder = () => {
+const BigNFTSlider = () => {
   const [idNumber, setIdNumber] = useState(0);
 
   const sliderData = [
@@ -214,4 +214,4 @@ const BigNFTSilder = () => {
   );
 };
 
-export default BigNFTSilder;
+export default BigNFTSlider;
