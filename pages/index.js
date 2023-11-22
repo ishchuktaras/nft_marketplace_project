@@ -7,7 +7,8 @@ import {
   Service,
   BigNFTSlider,
   Subscribe,
-  Title
+  Title,
+  Category,
 } from "../components/componentsindex";
 
 const Home = () => {
@@ -16,8 +17,17 @@ const Home = () => {
       <HeroSection />
       <Service />
       <BigNFTSlider />
+      <Title
+        heading="Never miss a drop"
+        paragraph="Subscribe to our super-exclusive drop list and be the first to know
+        about upcoming drops."
+      />
       <Subscribe />
-      <Title />
+      <Title
+        heading="Browse by category"
+        paragraph="Explore the NTFs in most featured categories."
+      />
+      <Category />
     </div>
   );
 };
