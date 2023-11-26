@@ -10,6 +10,7 @@ import {
   Title,
   Category,
   Filter,
+  NFTCard
 } from "../components/componentsindex";
 
 const Home = () => {
@@ -23,17 +24,18 @@ const Home = () => {
         paragraph="Discover the most outstanding NTFs in all topics of life."
       />
       <Filter />
+      <NFTCard />
+      <Title
+        heading="Browse by category"
+        paragraph="Explore the NTFs in most featured categories."
+      />
+      <Category />
       <Title
         heading="Never miss a drop"
         paragraph="Subscribe to our super-exclusive drop list and be the first to know
         about upcoming drops."
       />
       <Subscribe />
-      <Title
-        heading="Browse by category"
-        paragraph="Explore the NTFs in most featured categories."
-      />
-      <Category />
     </div>
   );
 };
