@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+```shell
+>>>>>>> 7070de9 (readme edit)
 npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
