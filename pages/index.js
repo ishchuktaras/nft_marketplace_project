@@ -9,6 +9,7 @@ import {
   Subscribe,
   Title,
   Category,
+  Filter,
 } from "../components/componentsindex";
 
 const Home = () => {
@@ -17,6 +18,11 @@ const Home = () => {
       <HeroSection />
       <Service />
       <BigNFTSlider />
+      <Title
+        heading="Featured NTFs"
+        paragraph="Discover the most outstanding NTFs in all topics of life."
+      />
+      <Filter />
       <Title
         heading="Never miss a drop"
         paragraph="Subscribe to our super-exclusive drop list and be the first to know
