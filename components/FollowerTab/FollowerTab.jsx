@@ -150,7 +150,7 @@ const FollowerTab = ({ TopCreator }) => {
   return (
     <div className={Style.followerTab}>
       <div className={Style.followerTab_title}>
-        <h2> Top Creators List..</h2>
+        <h2> Top Creators List</h2>
         <div className={Style.followerTab_tabs}>
           <div className={Style.followerTab_tabs_btn}>
             <button onClick={() => openPopular()}>
