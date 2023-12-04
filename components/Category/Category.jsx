@@ -18,7 +18,7 @@ const Category = () => {
     },
     {
       images: images.creatorbackground3,
-      name: "Entirtment Art",
+      name: "Entertainment Art",
     },
     {
       images: images.creatorbackground4,
@@ -59,7 +59,7 @@ const Category = () => {
         {CategoryArray.map((el, i) => (
           <div className={Style.category_box} key={i + 1}>
             <Image
-              src={images.creatorbackground1}
+              src={el.images}
               className={Style.category_box_img}
               alt="Background image"
               width={350}
@@ -72,8 +72,8 @@ const Category = () => {
                 <BsCircleFill />
               </span>
               <div className={Style.category_box_title_info}>
-                <h4>Entertainment</h4>
-                <small>{i + 1}995 NFTS</small>
+                <h4>{el.name}</h4>
+                <small>{i + 1}5 NFTS</small>
               </div>
             </div>
           </div>
