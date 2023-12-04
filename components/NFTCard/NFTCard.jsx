@@ -8,17 +8,52 @@ import Link from "next/link";
 import Style from "./NFTCard.module.css";
 import images from "../../img";
 
-const NFTCard = ({ NFTData }) => {
-  const CardArray = [
-    images.nft_image_1,
-    images.nft_image_2,
-    images.nft_image_3,
-    images.nft_image_1,
-    images.nft_image_2,
-    images.nft_image_3,
-    images.nft_image_1,
-    images.nft_image_2,
-    images.nft_image_3,
+const NFTCard = () => {
+  const CategoryArray = [
+    {
+      images: images.creatorbackground1,
+      name: "Dance Monkey",
+    },
+    {
+      images: images.creatorbackground2,
+      name: "Sports",
+    },
+    {
+      images: images.creatorbackground3,
+      name: "Entertainment Art",
+    },
+    {
+      images: images.creatorbackground4,
+      name: "Time Life",
+    },
+    {
+      images: images.creatorbackground5,
+      name: "Animals Art",
+    },
+    {
+      images: images.creatorbackground6,
+      name: "Music",
+    },
+    {
+      images: images.creatorbackground7,
+      name: "Digital Arts",
+    },
+    {
+      images: images.creatorbackground8,
+      name: "Hubby",
+    },
+    {
+      images: images.creatorbackground8,
+      name: "Bad Arts",
+    },
+    {
+      images: images.creatorbackground9,
+      name: " Arts",
+    },
+    {
+      images: images.creatorbackground10,
+      name: "My Fav",
+    },
   ];
 
   const [like, setLike] = useState(true);
@@ -31,14 +66,13 @@ const NFTCard = ({ NFTData }) => {
     }
   };
 
-  // console.log(NFTData);
   return (
     <div className={Style.NFTCard}>
-      {CardArray.map((el, i) => (
+      {CategoryArray.map((el, i) => (
         <div className={Style.NFTCard_box} key={i + 1}>
           <div className={Style.NFTCard_box_img}>
             <Image
-              src={images.nft_image_1}
+              src={el.images}
               alt="NFT images"
               width={600}
               height={600}
