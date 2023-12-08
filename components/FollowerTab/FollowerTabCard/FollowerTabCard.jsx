@@ -28,7 +28,7 @@ const FollowerTabCard = ({ i, el }) => {
         <div className={Style.FollowerTabCard_box_img}>
           <Image
             className={Style.FollowerTabCard_box_img_img}
-            src={images.creatorbackground1}
+            src={el.background}
             alt="profile background"
             width={500}
             height={300}
