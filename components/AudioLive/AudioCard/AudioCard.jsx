@@ -44,7 +44,7 @@ const AudioCard = () => {
           </div>
 
           <div className={Style.audioCard_box_time}>
-            <div className={Style.audioCard_box_like_time_remaing}>
+            <div className={Style.audioCard_box_like_time_remaining}>
               <small>Reaming time</small>
               <h5>3h : 15m :20s</h5>
             </div>
