@@ -15,6 +15,7 @@ import {
   FollowerTab,
   AudioLive,
   Slider,
+  Video,
 } from "../components/componentsindex";
 
 const Home = () => {
@@ -48,6 +49,7 @@ const Home = () => {
         about upcoming drops."
       />
       <Subscribe />
+      <Video />
     </div>
   );
 };
