@@ -1,3 +1,5 @@
+
+
 .Video{
     width: 100%;
     margin-top: 14rem;
@@ -34,8 +36,7 @@
 }
 
 .Video_box_frame_left_img{
-    border-radius: 2rem;
-    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
 }
 
 .Video_box_frame_right{

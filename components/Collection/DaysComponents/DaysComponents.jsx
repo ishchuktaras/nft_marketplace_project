@@ -64,7 +64,7 @@ const DaysComponents = ({ el, i }) => {
               <p>
                 Creator
                 <span>
-                  Mykola Hohol
+                  Shoaib Bhai
                   <small>
                     <MdVerified />
                   </small>

@@ -22,10 +22,8 @@ const Footer = () => {
     <div className={Style.footer}>
       <div className={Style.footer_box}>
         <div className={Style.footer_box_social}>
-          {/* <Image src={images.logo} alt="footer logo" height={100} width={100} /> */}
-          <a href="/">
-          <Image src={images.logo} alt="NFT Market Place"  width={100} height={100}/>
-          </a>
+          <Image src={images.logo} alt="footer logo" height={110} width={110} />
+
           <p>
             The world’s first and largest digital marketplace for crypto
             collectibles and non-fungible tokens (NFTs). Buy, sell, and discover
@@ -70,7 +68,8 @@ const Footer = () => {
           </div>
           <div className={Style.subscribe_box_info}>
             <p>
-              Discover, collect, and sell extraordinary NFTs.
+              Discover, collect, and sell extraordinary NFTs OpenSea is the
+              world first and largest NFT marketplace
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-//INTERNAL IMPORT
+//INTERNALIMPORT
 import Style from "./Video.module.css";
 import images from "../../img";
 

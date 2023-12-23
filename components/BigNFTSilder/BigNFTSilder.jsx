@@ -5,18 +5,18 @@ import { MdVerified, MdTimer } from "react-icons/md";
 import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb";
 
 //INTERNAL IMPORT
-import Style from "./BigNFTSlider.module.css";
+import Style from "./BigNFTSilder.module.css";
 import images from "../../img";
 import Button from "../Button/Button";
 
-const BigNFTSlider = () => {
+const BigNFTSilder = () => {
   const [idNumber, setIdNumber] = useState(0);
 
   const sliderData = [
     {
-      title: "Hello NFT",
+      title: "NFT",
       id: 1,
-      name: "Daulat Hussain",
+      name: "Ivan Franko",
       collection: "GYm",
       price: "00664 ETH",
       like: 243,
@@ -32,7 +32,7 @@ const BigNFTSlider = () => {
     {
       title: "Buddy NFT",
       id: 2,
-      name: "Shoaib Hussain",
+      name: "Lina Kostenko",
       collection: "Home",
       price: "0000004 ETH",
       like: 243,
@@ -48,7 +48,7 @@ const BigNFTSlider = () => {
     {
       title: "Gym NFT",
       id: 3,
-      name: "Raayan Hussain",
+      name: "Lesia Ukrainka",
       collection: "GYm",
       price: "0000064 ETH",
       like: 243,
@@ -64,7 +64,7 @@ const BigNFTSlider = () => {
     {
       title: "Home NFT",
       id: 4,
-      name: "Raayan Hussain",
+      name: "Irena Karpa",
       collection: "GYm",
       price: "4664 ETH",
       like: 243,
@@ -214,4 +214,4 @@ const BigNFTSlider = () => {
   );
 };
 
-export default BigNFTSlider;
+export default BigNFTSilder;

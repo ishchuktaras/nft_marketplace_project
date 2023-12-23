@@ -5,14 +5,17 @@ import Image from "next/image";
 //INTERNAL IMPORT
 import Style from "./Subscribe.module.css";
 import images from "../../img";
-import { Title } from "../componentsindex";
 
 const Subscribe = () => {
   return (
     <div className={Style.subscribe}>
       <div className={Style.subscribe_box}>
         <div className={Style.subscribe_box_left}>
-          
+          <h2>Never miss a drop</h2>
+          <p>
+            Subcribe to our super-exclusive drop list and be the first to know
+            abour upcoming drops
+          </p>
           <div className={Style.subscribe_box_left_box}>
             <span>01</span>
             <small>Get more discount</small>

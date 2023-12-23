@@ -8,45 +8,18 @@ import Link from "next/link";
 import Style from "./NFTCard.module.css";
 import images from "../../img";
 
-const NFTCard = () => {
-  const CardArray = [
-    {
-      images: images.nft_image_1,
-      name: "Dance Monkey",
-    },
-    {
-      images: images.nft_image_2,
-      name: "Sports",
-    },
-    {
-      images: images.nft_image_3,
-      name: "Entertainment Art",
-    },
-    {
-      images: images.nft_image_1,
-      name: "Dance Monkey",
-    },
-    {
-      images: images.nft_image_2,
-      name: "Sports",
-    },
-    {
-      images: images.nft_image_3,
-      name: "Entertainment Art",
-    },
-    {
-      images: images.nft_image_1,
-      name: "Dance Monkey",
-    },
-    {
-      images: images.nft_image_2,
-      name: "Sports",
-    },
-    {
-      images: images.nft_image_3,
-      name: "Entertainment Art",
-    },
-  ];
+const NFTCard = ({ NFTData }) => {
+  // const CardArray = [
+  //   images.nft_image_1,
+  //   images.nft_image_2,
+  //   images.nft_image_3,
+  //   images.nft_image_1,
+  //   images.nft_image_2,
+  //   images.nft_image_3,
+  //   images.nft_image_1,
+  //   images.nft_image_2,
+  //   images.nft_image_3,
+  // ];
 
   const [like, setLike] = useState(true);
 
@@ -61,12 +34,12 @@ const NFTCard = () => {
   // console.log(NFTData);
   return (
     <div className={Style.NFTCard}>
-      {CardArray.map((el, i) => (
+      {NFTData.map((el, i) => (
         <Link href={{ pathname: "/NFT-details", query: el }}>
           <div className={Style.NFTCard_box} key={i + 1}>
             <div className={Style.NFTCard_box_img}>
               <Image
-                src={el.images}
+                src={el.image}
                 alt="NFT images"
                 width={600}
                 height={600}

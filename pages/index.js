@@ -5,50 +5,84 @@ import Style from "../styles/index.module.css";
 import {
   HeroSection,
   Service,
-  BigNFTSlider,
+  BigNFTSilder,
   Subscribe,
   Title,
   Category,
   Filter,
   NFTCard,
   Collection,
-  FollowerTab,
   AudioLive,
+  FollowerTab,
   Slider,
+  Brand,
   Video,
+  Loader,
 } from "../components/componentsindex";
+import { getTopCreators } from "../TopCreators/TopCreators";
+
+//IMPORTING CONTRACT DATA
+import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
+  const { checkIfWalletConnected, currentAccount } = useContext(
+    NFTMarketplaceContext
+  );
+  useEffect(() => {
+    checkIfWalletConnected();
+  }, []);
+
+  const { fetchNFTs } = useContext(NFTMarketplaceContext);
+  const [nfts, setNfts] = useState([]);
+  const [nftsCopy, setNftsCopy] = useState([]);
+
+  useEffect(() => {
+    if (currentAccount) {
+    fetchNFTs().then((items) => {
+      console.log(nfts);
+      setNfts(items.reverse());
+      setNftsCopy(items);
+    });
+    }
+  }, []);
+
+  //CREATOR LIST
+
+  const creators = getTopCreators(nfts);
+  // console.log(creators);
+
   return (
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-      <BigNFTSlider />
+      <BigNFTSilder />
       <Title
         heading="Audio Collection"
-        paragraph="Discover the most outstanding NTFs in all topics of life."
+        paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      <FollowerTab />
+      {creators.length == 0 ? (
+        <Loader />
+      ) : (
+        <FollowerTab TopCreator={creators} />
+      )}
+
       <Slider />
       <Collection />
       <Title
-        heading="Featured NTFs"
-        paragraph="Discover the most outstanding NTFs in all topics of life."
+        heading="Featured NFTs"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <Filter />
-      <NFTCard />
+      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+
       <Title
         heading="Browse by category"
-        paragraph="Explore the NTFs in most featured categories."
+        paragraph="Explore the NFTs in the most featured categories."
       />
       <Category />
-      <Title
-        heading="Never miss a drop"
-        paragraph="Subscribe to our super-exclusive drop list and be the first to know
-        about upcoming drops."
-      />
       <Subscribe />
+      <Brand />
       <Video />
     </div>
   );

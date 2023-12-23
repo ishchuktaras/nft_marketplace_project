@@ -44,7 +44,7 @@ const AudioCard = () => {
           </div>
 
           <div className={Style.audioCard_box_time}>
-            <div className={Style.audioCard_box_like_time_remaining}>
+            <div className={Style.audioCard_box_like_time_remaing}>
               <small>Reaming time</small>
               <h5>3h : 15m :20s</h5>
             </div>
@@ -52,7 +52,7 @@ const AudioCard = () => {
         </div>
 
         <div className={Style.audioCard_box_player}>
-          <Image src={images.musicWave} alt="music" width={200} />
+          <Image src={images.musiceWave} alt="musice" width={200} />
           <div
             className={Style.audioCard_box_musicPlayer}
             onClick={() => playMusic()}

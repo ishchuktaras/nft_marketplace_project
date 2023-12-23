@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { AiOutlineClose } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -18,9 +18,10 @@ import { DiJqueryLogo } from "react-icons/di";
 import Style from "./SideBar.module.css";
 import images from "../../../img";
 import Button from "../../Button/Button";
+import { Router } from "next/router";
 
 const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
-  //------USE STATE
+  //------USESTATE
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
 
@@ -61,7 +62,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       link: "blog",
     },
   ];
-  //------HELP CENTER
+  //------HELP CNTEER
   const helpCenter = [
     {
       name: "About",
@@ -107,16 +108,20 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
 
   return (
     <div className={Style.sideBar}>
-      <AiOutlineClose
+      <GrClose
         className={Style.sideBar_closeBtn}
         onClick={() => closeSideBar()}
       />
 
       <div className={Style.sideBar_box}>
-        <Image src={images.logo} alt="logo" width={100} height={100} />
-
+        {/* <Image src={images.logo} alt="logo" width={150} height={150} /> */}
         <p>
-          Discover the most outstanding articles on all topics of NFT & write
+          <a href="/">
+            <DiJqueryLogo className={Style.sideBar_box_logo} />
+          </a>
+        </p>
+        <p>
+          Discover the most outstanding articles on all topices of NFT & write
           your own stories and share them
         </p>
         <div className={Style.sideBar_social}>

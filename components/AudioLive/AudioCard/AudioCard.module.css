@@ -53,16 +53,16 @@ transition:  all .3s ease-in;
     border-bottom-left-radius: 1rem;
 }
 
-.audioCard_box_like_time_remaining{
+.audioCard_box_like_time_remaing{
     transform: skewX(-35deg);
     text-align: center;
 }
 
-.audioCard_box_like_time_remaining small{
+.audioCard_box_like_time_remaing small{
     font-weight: 500;
 }
 
-.audioCard_box_like_time_remaining h5{
+.audioCard_box_like_time_remaing h5{
     font-size: 1.5rem;
     margin-top: 1.6rem;
 }

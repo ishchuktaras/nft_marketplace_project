@@ -11,7 +11,7 @@ const LikeProfile = () => {
       {imageArray.map((el, i) => (
         <div className={Style.like_box} key={i + 1}>
           <Image
-            src={images.user1}
+            src={el}
             width={15}
             height={15}
             key={i + 1}
@@ -23,4 +23,4 @@ const LikeProfile = () => {
   );
 };
 
-export default LikeProfile; 
+export default LikeProfile;

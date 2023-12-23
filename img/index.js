@@ -34,11 +34,12 @@ import vimeo from "./vimeo.svg";
 import vector from "./VectorHIW.svg";
 import zgcmq from "./zgcmq.svg";
 import hero from "./hero.png";
+import nft_1 from "./nft_1.png";
 import getAble from "./getable.png";
 import nft_image_1 from "./nft-image-1.png";
 import nft_image_2 from "./nft-image-2.png";
 import nft_image_3 from "./nft-image-3.png";
-import musicWave from "./musicwave.png";
+import musiceWave from "./musicwave.png";
 import update from "./update.png";
 import earn from "./eran.png";
 import NFTVideo from "./nftvideo.png";
@@ -72,11 +73,12 @@ export default {
   earn,
   collection,
   update,
-  musicWave,
+  musiceWave,
   nft_image_1,
   nft_image_2,
   nft_image_3,
   getAble,
+  nft_1,
   hero,
   creatorbackground1,
   creatorbackground2,
