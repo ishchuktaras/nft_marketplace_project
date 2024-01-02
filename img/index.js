@@ -31,6 +31,7 @@ import twitter from "./twitter.svg";
 import telegram from "./telegram.svg";
 import youtube from "./youtube.svg";
 import vimeo from "./vimeo.svg";
+import instagram from "./instagram.png";
 import vector from "./VectorHIW.svg";
 import zgcmq from "./zgcmq.svg";
 import hero from "./hero.png";
@@ -113,6 +114,7 @@ export default {
   vector,
   vimeo,
   youtube,
+  instagram,
   zgcmq,
   loader,
   errorgif,

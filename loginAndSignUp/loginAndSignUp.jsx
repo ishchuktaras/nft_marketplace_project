@@ -19,8 +19,8 @@ const loginAndSignUp = () => {
       name: "Continue with twitter",
     },
     {
-      social: images.facebook,
-      name: "Continue with Facebook",
+      social: images.instagram,
+      name: "Continue with Instagram",
     },
   ];
   return (
