@@ -121,7 +121,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
           </a>
         </p>
         <p>
-          Discover the most outstanding articles on all topices of NFT & write
+          Discover the most outstanding articles on all topics of NFT & write
           your own stories and share them
         </p>
         <div className={Style.sideBar_social}>

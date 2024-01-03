@@ -150,7 +150,7 @@ const NavBar = () => {
           <div className={Style.navbar_container_right_profile_box}>
             <div className={Style.navbar_container_right_profile}>
               <Image
-                src={images.user1}
+                src={images.user5}
                 alt="Profile"
                 width={40}
                 height={40}
@@ -173,7 +173,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR CPMPONE/NT */}
+      {/* SIDEBAR COMPONENT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar

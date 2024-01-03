@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-//INTERNALIMPORT
+//INTERNAL IMPORT
 import Style from "./loginAndSignUp.module.css";
 import images from "../img";
 import { Button } from "../components/componentsindex.js";
@@ -16,7 +16,7 @@ const loginAndSignUp = () => {
     },
     {
       social: images.twitter,
-      name: "Continue with twitter",
+      name: "Continue with Twitter",
     },
     {
       social: images.instagram,
