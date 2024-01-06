@@ -77,7 +77,7 @@ const NavBar = () => {
     }
   };
 
-  //SMART CONTRACT SECTION
+  // //SMART CONTRACT SECTION
   const { currentAccount, connectWallet, openError } = useContext(
     NFTMarketplaceContext
   );
@@ -87,6 +87,12 @@ const NavBar = () => {
       <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
           <div className={Style.logo}>
+          <Image
+              src={images.logo_flowers}
+              alt="logo"
+              width={100}
+              height={100}
+            />
             <Image
               src={images.logo}
               alt="logo"
