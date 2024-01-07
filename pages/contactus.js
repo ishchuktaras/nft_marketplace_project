@@ -60,7 +60,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="shoaib bhai"
+                  placeholder="Your name"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>
@@ -80,7 +80,7 @@ const contactus = () => {
                   id=""
                   cols="30"
                   rows="6"
-                  placeholder="something about yourself in few words"
+                  placeholder="Something about yourself in few words"
                 ></textarea>
               </div>
               <Button
