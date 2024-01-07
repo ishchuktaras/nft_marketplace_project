@@ -1,8 +1,9 @@
 import "../styles/globals.css";
 
-//INTRNAL IMPORT
+//INTERNAL IMPORT
 import { NavBar, Footer } from "../components/componentsindex";
 import { NFTMarketplaceProvider } from "../Context/NFTMarketplaceContext";
+import { Analytics } from '@vercel/analytics/react';
 
 const MyApp = ({ Component, pageProps }) => (
   <div>
@@ -10,6 +11,7 @@ const MyApp = ({ Component, pageProps }) => (
       <NavBar />
       <Component {...pageProps} />
       <Footer />
+      <Analytics />
     </NFTMarketplaceProvider>
   </div>
 );
