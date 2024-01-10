@@ -114,12 +114,12 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       />
 
       <div className={Style.sideBar_box}>
-        {/* <Image src={images.logo} alt="logo" width={150} height={150} /> */}
-        <p>
+        { <Image src={images.logo} alt="logo" width={150} height={150} /> }
+        {/* <p>
           <a href="/">
             <DiJqueryLogo className={Style.sideBar_box_logo} />
           </a>
-        </p>
+        </p> */}
         <p>
           Discover the most outstanding articles on all topics of NFT & write
           your own stories and share them
