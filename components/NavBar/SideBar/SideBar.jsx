@@ -21,7 +21,7 @@ import Button from "../../Button/Button";
 import { Router } from "next/router";
 
 const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
-  //------USESTATE
+  //------USE STATE
   const [openDiscover, setOpenDiscover] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
 
@@ -62,7 +62,7 @@ const SideBar = ({ setOpenSideMenu, currentAccount, connectWallet }) => {
       link: "blog",
     },
   ];
-  //------HELP CNTEER
+  //------HELP CENTER
   const helpCenter = [
     {
       name: "About",

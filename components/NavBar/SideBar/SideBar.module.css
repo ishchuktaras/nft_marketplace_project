@@ -13,6 +13,8 @@
 .sideBar_closeBtn{
     position: absolute;
     top: 3rem;
+    background: var(--icons-color);
+    stroke-width: 4px;
     right: 2rem;
     transition: all .2s ease-in-out;
     cursor: pointer;
