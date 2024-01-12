@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import Image from "next/image";
 
-//INTRNAL IMPORT
+//INTERNAL IMPORT
 import Style from "./DropZone.module.css";
 import images from "../../img";
 
@@ -10,23 +10,19 @@ const DropZone = ({
   title,
   heading,
   subHeading,
-  name,
+  itemName,
   website,
   description,
   royalties,
   fileSize,
   category,
   properties,
-  uploadToIPFS,
-  setImage,
+  image,
 }) => {
   const [fileUrl, setFileUrl] = useState(null);
 
   const onDrop = useCallback(async (acceptedFile) => {
-    const url = await uploadToIPFS(acceptedFile[0]);
-    setFileUrl(url);
-    setImage(url);
-    console.log(url);
+    setFileUrl(acceptedFile[0]);
   });
 
   const { getRootProps, getInputProps } = useDropzone({
@@ -42,7 +38,7 @@ const DropZone = ({
           <p>{title}</p>
           <div className={Style.DropZone_box_input_img}>
             <Image
-              src={images.upload}
+              src={image}
               alt="upload"
               width={100}
               height={100}
@@ -58,13 +54,18 @@ const DropZone = ({
       {fileUrl && (
         <aside className={Style.DropZone_box_aside}>
           <div className={Style.DropZone_box_aside_box}>
-            <Image src={fileUrl} alt="nft image" width={200} height={200} />
+            <Image
+              src={images.nft_image_1}
+              alt="nft image"
+              width={200}
+              height={200}
+            />
 
             <div className={Style.DropZone_box_aside_box_preview}>
               <div className={Style.DropZone_box_aside_box_preview_one}>
                 <p>
                   <samp>NFT Name:</samp>
-                  {name || ""}
+                  {itemName || ""}
                 </p>
                 <p>
                   <samp>Website:</samp>

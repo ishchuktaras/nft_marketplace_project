@@ -182,14 +182,14 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
             </div>
           </div>
           <div className={formStyle.Form_box_input}>
-            <label htmlFor="Propertie">Propertie</label>
+            <label htmlFor="Properties">Properties</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
                 <AiTwotonePropertySafety />
               </div>
               <input
                 type="text"
-                placeholder="Propertie"
+                placeholder="Properties"
                 onChange={(e) => setProperties(e.target.value)}
               />
             </div>
@@ -223,8 +223,8 @@ const UploadNFT = ({ uploadToIPFS, createNFT }) => {
                 // website,
                 // royalties,
                 // fileSize,
-                // category,
-                // properties
+               / category,
+                properties
               )
             }
             classStyle={Style.upload_box_btn_style}
