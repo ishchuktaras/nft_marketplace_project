@@ -28,6 +28,26 @@ const aboutus = () => {
       position: "Marketing specialist",
       images: images.founder4,
     },
+    {
+      name: "Andrii Zakharchuk",
+      position: "Web developer",
+      images: images.founder5,
+    },
+    {
+      name: "Mariia Butinskaiia",
+      position: "Artist/Social Media specialist",
+      images: images.founder6,
+    },
+    {
+      name: "Olena Shestopalova",
+      position: "Artist/Painter",
+      images: images.founder7,
+    },
+    {
+      name: "Oksana Trofimova",
+      position: "Artist/Painter",
+      images: images.founder8,
+    },
   ];
 
   const factsArray = [
@@ -62,7 +82,7 @@ const aboutus = () => {
         </div>
 
         <div className={Style.aboutus_box_title}>
-          <h2>⛱ Founder</h2>
+          <h2>⛱ Founders and participants</h2>
           <p>
             We’re impartial and independent, and every day we create
             distinctive, world-class programmes and content
@@ -76,8 +96,8 @@ const aboutus = () => {
                 <Image
                   src={el.images}
                   alt={el.name}
-                  width={500}
-                  height={500}
+                  width={350}
+                  height={350}
                   className={Style.aboutus_box_founder_box_img_img}
                 />
                 <h3>{el.name}</h3>

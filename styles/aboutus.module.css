@@ -66,12 +66,14 @@
 
 .aboutus_box_founder_box_img h3{
     line-height: 0;
-    font-size: 2rem;
+    /* letter-spacing: 2px; */
+    font-size: 1.4rem;
+    
 }
 
 .aboutus_box_founder_box_img p{
     line-height: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .aboutus_box_facts_box{
