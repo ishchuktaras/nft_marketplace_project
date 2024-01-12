@@ -9,11 +9,11 @@ import { useRouter } from "next/router";
 //INTERNAL IMPORT
 import Style from "./Upload.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
-import images from "../img";
+import images from "../img/index.js";
 import { Button } from "../components/componentsindex.js";
-import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
+import { DropZone } from "./uploadNFTIndex.js";
 
-const UloadNFT = ({ uploadToIPFS, createNFT }) => {
+const UploadNFT = ({ uploadToIPFS, createNFT }) => {
   const [price, setPrice] = useState("");
   const [active, setActive] = useState(0);
   const [name, setName] = useState("");
@@ -27,7 +27,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
 
   const router = useRouter();
 
-  const categoryArry = [
+  const categoryArray = [
     {
       image: images.nft_image_1,
       category: "Sports",
@@ -76,7 +76,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           <label htmlFor="nft">Item Name</label>
           <input
             type="text"
-            placeholder="shoaib bhai"
+            placeholder="type name"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setName(e.target.value)}
           />
@@ -97,9 +97,9 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           </div>
 
           <p className={Style.upload_box_input_para}>
-            Ciscrypt will include a link to this URL on this item's detail page,
-            so that users can click to learn more about it. You are welcome to
-            link to your own webpage with more details.
+            NFU will include a link to this URL on this item's detail page, so
+            that users can click to learn more about it. You are welcome to link
+            to your own webpage with more details.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           </p>
 
           <div className={Style.upload_box_slider_div}>
-            {categoryArry.map((el, i) => (
+            {categoryArray.map((el, i) => (
               <div
                 className={`${Style.upload_box_slider} ${
                   active == i + 1 ? Style.active : ""
@@ -240,4 +240,4 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
   );
 };
 
-export default UloadNFT;
+export default UploadNFT;
