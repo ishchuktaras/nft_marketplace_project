@@ -7,13 +7,13 @@ import Style from "./SliderCard.module.css";
 import images from "../../../img";
 import LikeProfile from "../../LikeProfile/LikeProfile";
 
-const SliderCard = ({ el, i }) => {
+const SliderCard = () => {
   return (
     <motion.div className={Style.sliderCard}>
       <div className={Style.sliderCard_box}>
         <motion.div className={Style.sliderCard_box_img}>
           <Image
-            src={el.background}
+            src={images.creatorbackground10}
             className={Style.sliderCard_box_img_img}
             alt="slider profile"
             width={500}
@@ -22,24 +22,22 @@ const SliderCard = ({ el, i }) => {
           />
         </motion.div>
         <div className={Style.sliderCard_box_title}>
-          <p>NFT Video #{i + 1}</p>
+          <p>NFT Video #1245</p>
           <div className={Style.sliderCard_box_title_like}>
             {/* <LikeProfile /> */}
-            <small>{i + 4} 0f 100</small>
+            <small>1 0f 100</small>
           </div>
         </div>
 
         <div className={Style.sliderCard_box_price}>
           <div className={Style.sliderCard_box_price_box}>
             <small>Current Bid</small>
-            <p>{i + 2}.000 ETH</p>
+            <p>1.000 ETH</p>
           </div>
 
           <div className={Style.sliderCard_box_price_time}>
             <small>Reaming time</small>
-            <p>
-              {i + 1}h : 15m : {i + 4}0s
-            </p>
+            <p>3h : 15m : 20s</p>
           </div>
         </div>
       </div>
