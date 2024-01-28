@@ -6,7 +6,7 @@ import axios from "axios";
 import { create as ipfsHttpClient } from "ipfs-http-client";
 
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
-const projectSecretKey = process.env.NEXT_PUBLIC_SECRECT_KEY;
+const projectSecretKey = process.env.NEXT_PUBLIC_SECRET_KEY;
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
@@ -59,14 +59,14 @@ export const NFTMarketplaceContext = React.createContext();
 export const NFTMarketplaceProvider = ({ children }) => {
   const titleData = "Discover, collect, and sell NFTs";
 
-  //------USESTAT
+  //------USE STATE
   const [error, setError] = useState("");
   const [openError, setOpenError] = useState(false);
   const [currentAccount, setCurrentAccount] = useState("");
   const [accountBalance, setAccountBalance] = useState("");
   const router = useRouter();
 
-  //---CHECK IF WALLET IS CONNECTD
+  //---CHECK IF WALLET IS CONNECTED
 
   const checkIfWalletConnected = async () => {
     try {
@@ -101,7 +101,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     checkIfWalletConnected();
   }, []);
 
-  //---CONNET WALLET FUNCTION
+  //---CONNECT WALLET FUNCTION
   const connectWallet = async () => {
     try {
       if (!window.ethereum)
@@ -134,7 +134,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     }
   };
 
-  //---CREATENFT FUNCTION
+  //---CREATE NFT FUNCTION
   const createNFT = async (name, price, image, description, router) => {
     if (!name || !description || !price || !image)
       return setError("Data Is Missing"), setOpenError(true);
@@ -180,7 +180,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     }
   };
 
-  //--FETCHNFTS FUNCTION
+  //--FETCH NFTS FUNCTION
 
   const fetchNFTs = async () => {
     try {
