@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 
-const NEXT_PUBLIC_POLYGON_MUMBAI_RPC = "YOUR RPC URL";
+const NEXT_PUBLIC_POLYGON_MUMBAI_RPC = "https://polygon-rpc.com/";
 const NEXT_PUBLIC_PRIVATE_KEY = "PRIVATE KEY";
 /** @type import('hardhat/config').HardhatUserConfig */
 
