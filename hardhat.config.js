@@ -11,7 +11,7 @@ module.exports = {
     hardhat: {},
     polygon_mumbai: {
       url: NEXT_PUBLIC_POLYGON_MUMBAI_RPC,
-      accounts: [`0x${NEXT_PUBLIC_PRIVATE_KEY}`],
+      account: [`${NEXT_PUBLIC_PRIVATE_KEY}`],
     },
   },
 

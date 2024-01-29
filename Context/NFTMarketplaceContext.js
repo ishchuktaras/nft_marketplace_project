@@ -374,9 +374,9 @@ export const NFTMarketplaceProvider = ({ children }) => {
       if (ethereum) {
         const contract = await connectToTransferFunds();
 
-        const avaliableTransaction = await contract.getAllTransactions();
+        const availableTransaction = await contract.getAllTransactions();
 
-        const readTransaction = avaliableTransaction.map((transaction) => ({
+        const readTransaction = availableTransaction.map((transaction) => ({
           addressTo: transaction.receiver,
           addressFrom: transaction.sender,
           timestamp: new Date(
